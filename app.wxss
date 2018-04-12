@@ -5,8 +5,8 @@
  flex-direction: column;
 }
 .list-item{
-  padding:10px 5px;
-  border-bottom:5px solid #888888; 
+  padding:5px;
+  border-bottom:3px solid #888888; 
 }
 .list-item-box{
   margin-bottom: 5px;
@@ -23,13 +23,12 @@
   height: 30px;
 }
 .list-item-name{
-  font-size:14px;
+  font-size:13px;
   color:#888888;
   margin-left:5px;
-  
 }
 .list-item-title{
-  font-size:16px;
+  font-size:14px;
   color:#353535;
 }
 .list-item-box:last-child{
@@ -37,7 +36,7 @@
   justify-content: space-between;
 }
 .list-item-replies{
-  font-size: 13px;
+  font-size: 11px;
   color:#888888;
   border:1px solid #ccc;
   border-radius:12px;
@@ -47,6 +46,6 @@
   border:1px solid #ccc;
   border-radius: 2px;
   padding:2px;
-  font-size: 13px;
+  font-size: 11px;
   color:#888888;
 }
