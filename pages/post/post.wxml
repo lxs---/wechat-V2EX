@@ -1,0 +1,31 @@
+<view class='post'>
+  <view class='post-item'>
+    <view>
+      <text class="post-item-title">{{post.title}}</text>
+    </view>
+    <view class='flex-box'>
+      <view class='avart-name'>
+        <image class='post-item-avart' src="https:{{post.member.avatar_mini}}" />
+        <text class='post-item-author'>{{post.member.username}}</text>
+      </view>
+
+      <text class='post-item-replies'>{{post.replies}}回复数</text>
+      <text class='post-item-node'>{{post.node.title}}</text>
+    </view>
+    <view class='content-box'>
+      <text class='post-item-content'>{{post.content}}</text>
+    </view>
+  </view>
+  <view class='reply'>
+    <view class='reply-item'>
+      <text>回复</text>
+    </view>
+    <view class='reply-item' wx:for="{{comments}}" wx:for-item="comment">
+      <view class='reply-item-username'>{{comment.member.username}}</view>
+      <view class='reply-item-content'>{{comment.content}}</view>
+    </view>
+  </view>
+</view>
+<loading hidden="{{hidden}}">
+  加载中...
+</loading>

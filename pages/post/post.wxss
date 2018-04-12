@@ -1,0 +1,67 @@
+.post{
+  display: flex;
+  flex-direction: column;
+  color: #888;
+}
+.post-item{
+  padding: 5px;
+  background-color:whitesmoke;
+  margin-bottom:10px;
+}
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-item-title{
+  font-size: 20px;
+  color: #353535;
+}
+.avart-name{
+  display: flex;
+  align-items: center;
+}
+.post-item-avart{
+  width:15px;
+  height: 15px;
+}
+.post-item-author{
+  font-size: 14px;
+  margin-left:5px;
+}
+.content-box{
+  margin-top:10px;
+}
+.post-item-content{
+  font-size: 18px;
+  word-break: break-all;
+}
+.post-item-replies{
+  font-size:14px;
+}
+.post-item-node{
+  font-size: 13px;
+  border:1px solid #ccc;
+  border-radius: 2px;
+  padding:2px;
+}
+.reply{
+  border:1px solid #ccc;
+  border-radius: 3px;
+  margin:5px;
+}
+.reply-item{
+  padding:5px;
+  border-bottom:1px solid #ccc;
+}
+.reply-item:last-child{
+  border: none;
+}
+.reply-item-username{
+  font-size: 16px;
+}
+.reply-item-content{
+  font-size: 18px;
+  color: #353535;
+  word-break: break-all;
+}
