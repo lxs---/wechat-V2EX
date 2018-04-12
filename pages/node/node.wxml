@@ -1,0 +1,11 @@
+<view>
+  <view class='node'>
+    <view class='node-item' wx:for="{{nodeList}}" catchtap="toTopic" id="{{item.id}}">
+      <text class='node-item-name'>{{item.title}}</text>
+      <text class='node-item-topics'>{{item.topics}}</text>
+    </view>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>
