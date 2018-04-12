@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view>
+  <view class="list">
+    <view class='list-item' catchtap='toPost' wx:for="{{hotList}}" id="{{item.id}}">
+      <view class='list-item-box'>
+        <image class='list-item-avart' src="https:{{item.member.avatar_normal}}" />
+        <text class='list-item-name'>{{item.member.username}}</text>
+      </view>
+      <view class='list-item-box'>
+        <text class='list-item-title'>{{item.title}}</text>
+      </view>
+      <view class='list-item-box'>
+        <text class='list-item-replies'>{{item.replies}}条回复</text>
+        <text class='list-item-node'>{{item.node.title}}</text>
+      </view>
+    </view>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>
